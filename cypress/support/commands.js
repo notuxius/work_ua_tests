@@ -1,21 +1,25 @@
 /// <reference types="cypress" />
 
-const email = Cypress.env("email");
-const password = Cypress.env("password");
-const firstName = Cypress.env("firstName");
-const lastName = Cypress.env("lastName");
+import { forms_elements } from "../fixtures/forms_elements.js";
+import { users_info } from "../fixtures/users_info.js";
+import { urls } from "../fixtures/urls.js";
 
-const registerUrl = Cypress.env("registerUrl");
-const registerFirstNameField = Cypress.env("registerFirstNameField");
-const registerLastNameField = Cypress.env("registerLastNameField");
-const registerSubmitButton = Cypress.env("registerSubmitButton");
+const email = users_info["email"];
+const password = users_info["password"];
+const firstName = users_info["firstName"];
+const lastName = users_info["lastName"];
 
-const loginUrl = Cypress.env("loginUrl");
-const loginUserNameField = Cypress.env("loginUserNameField");
-const loginPasswordField = Cypress.env("loginPasswordField");
-const loginSubmitButton = Cypress.env("loginSubmitButton");
+const registerUrl = urls["registerUrl"];
+const registerFirstNameField = forms_elements["registerFirstNameField"];
+const registerLastNameField = forms_elements["registerLastNameField"];
+const registerSubmitButton = forms_elements["registerSubmitButton"];
 
-const loggedInUrlPart = Cypress.env("loggedInUrlPart");
+const loginUrl = urls["loginUrl"];
+const loginUserNameField = forms_elements["loginUserNameField"];
+const loginPasswordField = forms_elements["loginPasswordField"];
+const loginSubmitButton = forms_elements["loginSubmitButton"];
+
+const loggedInUrlPart = urls["loggedInUrlPart"];
 
 Cypress.Commands.add("register", () => {
   cy.visit(registerUrl);

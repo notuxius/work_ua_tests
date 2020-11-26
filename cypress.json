@@ -2,24 +2,5 @@
 "defaultCommandTimeout": 30000,
 "requestTimeout": 30000,
 "viewportHeight": 800,
-"viewportWidth": 800,
-
-"env": {
-  "email": "pjqmpfqp@guerrillamail.info",
-  "password": "test-password",
-  "firstName": "FirstName",
-  "lastName": "LastName",
-
-  "registerUrl": "https://www.work.ua/jobseeker/register/",
-  "registerFirstNameField": "#first_name",
-  "registerLastNameField": "#last_name",
-  "registerSubmitButton": "input[type=submit]",
-
-  "loginUrl": "https://www.work.ua/jobseeker/login/",
-  "loginUserNameField": "#user-login",
-  "loginPasswordField": "#password",
-  "loginSubmitButton": "button[type=submit]",
-
-  "loggedInUrlPart": "/jobseeker/my/"
-}
+"viewportWidth": 800
 }
