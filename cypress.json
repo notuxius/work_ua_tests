@@ -12,12 +12,12 @@
   "registerUrl": "https://www.work.ua/jobseeker/register/",
   "registerFirstNameField": "#first_name",
   "registerLastNameField": "#last_name",
-  "registerSubmitButton": ":nth-child(10) > .btn",
+  "registerSubmitButton": "input[type=submit]",
 
   "loginUrl": "https://www.work.ua/jobseeker/login/",
   "loginUserNameField": "#user-login",
   "loginPasswordField": "#password",
-  "loginSubmitButton": ":nth-child(3) > .btn",
+  "loginSubmitButton": "button[type=submit]",
 
   "loggedInUrlPart": "/jobseeker/my/"
 }

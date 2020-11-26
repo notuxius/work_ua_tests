@@ -27,6 +27,7 @@ Cypress.Commands.add("register", () => {
 
 Cypress.Commands.add("login", () => {
   cy.visit(loginUrl);
+
   cy.get(loginUserNameField).type(email).should("have.value", email);
   cy.get(loginPasswordField).type(password).should("have.value", password);
   cy.get(loginSubmitButton).click();
