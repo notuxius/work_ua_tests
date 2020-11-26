@@ -3,6 +3,7 @@
 "requestTimeout": 30000,
 "viewportHeight": 800,
 "viewportWidth": 800,
+
 "env": {
   "email": "pjqmpfqp@guerrillamail.info",
   "password": "test-password",

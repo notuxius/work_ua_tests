@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 const email = Cypress.env("email");
 const password = Cypress.env("password");
 const firstName = Cypress.env("firstName");
@@ -13,6 +15,8 @@ const loginUserNameField = Cypress.env("loginUserNameField");
 const loginPasswordField = Cypress.env("loginPasswordField");
 const loginSubmitButton = Cypress.env("loginSubmitButton");
 
+const loggedInUrlPart = Cypress.env("loggedInUrlPart");
+
 Cypress.Commands.add("register", () => {
   cy.visit(registerUrl);
 
@@ -23,6 +27,8 @@ Cypress.Commands.add("register", () => {
   cy.get(loginUserNameField).type(email).should("have.value", email);
   cy.get(loginPasswordField).type(password).should("have.value", password);
   cy.get(registerSubmitButton).click();
+
+  cy.url().should("include", loggedInUrlPart);
 });
 
 Cypress.Commands.add("login", () => {
@@ -31,4 +37,6 @@ Cypress.Commands.add("login", () => {
   cy.get(loginUserNameField).type(email).should("have.value", email);
   cy.get(loginPasswordField).type(password).should("have.value", password);
   cy.get(loginSubmitButton).click();
+
+  cy.url().should("include", loggedInUrlPart);
 });
