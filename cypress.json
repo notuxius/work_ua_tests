@@ -2,5 +2,13 @@
 "defaultCommandTimeout": 30000,
 "requestTimeout": 30000,
 "viewportHeight": 800,
-"viewportWidth": 800
+"viewportWidth": 800,
+
+"baseUrl": "https://www.work.ua/",
+"loggedInUrlPart": "jobseeker/my/",
+
+"userEmail": "pjqmpfqp@guerrillamail.info",
+"userPassword": "test-password",
+"userFirstName": "FirstName",
+"userLastName": "LastName"
 }
